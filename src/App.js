@@ -1,20 +1,16 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom"
-import Homepage from "./components/homepage"
-import Cart from "./components/cart"
-import ProductDetails from "./components/product-details"
-
+import Layout from './components/shared/layout'
+import 'font-awesome/css/font-awesome.min.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const App = ()=>{
-  return(
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/product-details" element={<ProductDetails />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  )
+    return (
+        <div>
+               <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Layout />} />
+                </Routes>
+               </BrowserRouter>
+         </div>
+    )
 }
 
-export default App;
+export default App
