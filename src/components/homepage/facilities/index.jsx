@@ -52,10 +52,7 @@ const Facilities = ()=>{
                             <p className="text-sm opacity-70">Bored of the same product? Upgrade to try another, newer design and enjoy the change!</p>
                         </div>
                     </div>
-                </div>
-                
-               
-               
+                </div>  
             </div>
         </div>
     )
