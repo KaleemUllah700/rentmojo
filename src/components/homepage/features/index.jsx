@@ -30,7 +30,6 @@ const features = [
         description: 'WFH Essentails'
     },
 ]
-
     return (
         <div className="bg-[white] h-[150px] mx-16 flex justify-center my-2">
             {
