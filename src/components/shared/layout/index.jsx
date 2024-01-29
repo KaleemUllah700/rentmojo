@@ -124,7 +124,7 @@ const socials = [
                 <Button size='small' variant='solid' color='danger'>LOGIN/SIGNUP</Button>
             </nav>
             <section className="p-4">
-                <h1 className='p-8'>staging</h1>
+                {children}
             </section>
 
             <footer>
