@@ -1,7 +1,10 @@
+import Layout from "../shared/layout"
 const Cart = ()=>{
     return (
         <div>
-            dfsdfsdfdsfdfds
+            <Layout>
+                <h1>kaleem</h1>
+            </Layout>
         </div>
     )
 }
