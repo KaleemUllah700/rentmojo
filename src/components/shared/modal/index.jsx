@@ -8,7 +8,7 @@ close = ()=>setOpen(false)
 */
 import Button from '../button'
 
-const Modal = ({open=true, showTitle=true, title="Modal Title", description="Modal content Here", footer="true"})=>{
+const Modal = ({open=false, showTitle=true, title="Modal Title", description="Modal content Here", footer="true"})=>{
     return (
         <>
             {

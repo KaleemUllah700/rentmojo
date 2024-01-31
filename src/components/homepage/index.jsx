@@ -4,6 +4,7 @@ import Features from "./features"
 import Feedback from "./feedback"
 import Hero from "./here"
 import Homeproducts from "./home-products"
+
 const Homepage = ()=>{
     return (
         <Layout>
