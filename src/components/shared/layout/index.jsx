@@ -210,22 +210,50 @@ const socials = [
                     <div className='flex flex-col gap-4'>
                         <div className='flex flex-col gap-2'>
                             <label className='text-md font-semibold'>Full Name</label>
-                            <input type="text" name="fullname" className='w-full border rounded p-2' placeholder='name' required />
+                            <input 
+                                type="text" 
+                                name="fullname" 
+                                className='w-full border rounded p-2' 
+                                placeholder='name' 
+                                required 
+                            />
                         </div>
                         <div className='flex flex-col gap-2'>
                             <label className='text-md font-semibold'>Mobile No.</label>
-                            <input type="number" name="number" className='w-full border rounded p-2' placeholder='mobile no.' required />
+                            <input
+                                type="number"
+                                name="number"
+                                className='w-full border rounded p-2' 
+                                placeholder='mobile no.' 
+                                required 
+                            />
                         </div>
                         <div className='flex flex-col gap-2'>
                             <label className='text-md font-semibold'>Email</label>
-                            <input type="email" name="email" className='w-full border rounded p-2' placeholder='email' required />
+                            <input 
+                                type="email" 
+                                name="email" 
+                                className='w-full border rounded p-2' 
+                                placeholder='email' 
+                                required 
+                            />
                         </div>
                         <div className='flex flex-col gap-2'>
                             <label className='text-md font-semibold'>Password</label>
-                            <input type="password" name="password" className='w-full border rounded p-2' placeholder='password' required />
+                            <input 
+                                type="password" 
+                                name="password" 
+                                className='w-full border rounded p-2' 
+                                placeholder='password' 
+                                required 
+                            />
                         </div>
                         <button className='w-full bg-[blue] rounded p-2'>
-                            <input type="submit" value="signup" className='text-white font-semibold text-md' />
+                            <input 
+                                type="submit" 
+                                value="signup" 
+                                className='text-white font-semibold text-md'
+                            />
                         </button>
                     </div>
                 </form>
