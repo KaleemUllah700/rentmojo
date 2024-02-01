@@ -8,7 +8,11 @@ close = ()=>setOpen(false)
 */
 import Button from '../button'
 
+<<<<<<< HEAD
 const Modal = ({open=false, showTitle=true, title="Modal Title", description="Modal content Here", footer="true"})=>{
+=======
+const Modal = ({open=false, close, showTitle=true, title="Modal Title", children="Modal content Here", footer="true"})=>{
+>>>>>>> staging
     return (
         <>
             {
@@ -17,7 +21,7 @@ const Modal = ({open=false, showTitle=true, title="Modal Title", description="Mo
                 <div className="animate__animated animate__zoomIn relative w-[400px] bg-[white] py-2 px-4 rounded">
                     <button className='absolute top-0 right-2'>
                         <div>
-                            <i className='fa fa-close'></i>
+                            <i className='fa fa-close' onClick={close}></i>
                         </div>
                     </button>
                     {
@@ -25,13 +29,13 @@ const Modal = ({open=false, showTitle=true, title="Modal Title", description="Mo
                     }
                         <div className='flex flex-col gap-3'>
                             <p>
-                                {description}
+                                {children}
                             </p>
                             {
                                 footer &&
                                 <div className='flex gap-2 justify-end'>
                                     <Button size='small' color='success'>Ok</Button>
-                                    <Button size='small' color='danger'>Cancel</Button>
+                                    <Button size='small' color='danger' onClick={close}>Cancel</Button>
                                 </div> 
                             }  
                         </div>  
