@@ -8,11 +8,7 @@ close = ()=>setOpen(false)
 */
 import Button from '../button'
 
-<<<<<<< HEAD
-const Modal = ({open=false, showTitle=true, title="Modal Title", description="Modal content Here", footer="true"})=>{
-=======
 const Modal = ({open=false, close, showTitle=true, title="Modal Title", children="Modal content Here", footer="true"})=>{
->>>>>>> staging
     return (
         <>
             {
