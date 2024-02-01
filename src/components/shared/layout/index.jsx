@@ -1,7 +1,11 @@
 import Button from '../button'
 import { Link } from 'react-router-dom'
 import Logo from '../logo'
+import {useState} from 'react'
+import Modal from '../modal'
 const Layout = ({children})=>{
+
+const [open, setOpen] = useState(false)
 
 const menus = [
     {
@@ -121,7 +125,7 @@ const socials = [
                     <i className="fa fa-shopping-cart"></i>
                     <span>Cart</span>
                 </button>
-                <Button size='small' variant='solid' color='danger'>LOGIN/SIGNUP</Button>
+                <Button size='small' variant='solid' color='danger' onClick={()=>setOpen(true)} >LOGIN/SIGNUP</Button>
             </nav>
             <section className="p-4">
                 {children}
@@ -196,6 +200,64 @@ const socials = [
                     </div>
                 </div>
             </footer>
+            <Modal 
+                open={open} 
+                close={()=>setOpen(false)} 
+                title='Register'
+                footer={false}
+            >
+                <form>
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-md font-semibold'>Full Name</label>
+                            <input 
+                                type="text" 
+                                name="fullname" 
+                                className='w-full border rounded p-2' 
+                                placeholder='name' 
+                                required 
+                            />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-md font-semibold'>Mobile No.</label>
+                            <input
+                                type="number"
+                                name="number"
+                                className='w-full border rounded p-2' 
+                                placeholder='mobile no.' 
+                                required 
+                            />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-md font-semibold'>Email</label>
+                            <input 
+                                type="email" 
+                                name="email" 
+                                className='w-full border rounded p-2' 
+                                placeholder='email' 
+                                required 
+                            />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <label className='text-md font-semibold'>Password</label>
+                            <input 
+                                type="password" 
+                                name="password" 
+                                className='w-full border rounded p-2' 
+                                placeholder='password' 
+                                required 
+                            />
+                        </div>
+                        <button className='w-full bg-[blue] rounded p-2'>
+                            <input 
+                                type="submit" 
+                                value="signup" 
+                                className='text-white font-semibold text-md'
+                            />
+                        </button>
+                    </div>
+                </form>
+            </Modal>
         </div>
     )
 }
